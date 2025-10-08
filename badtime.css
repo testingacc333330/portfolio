@@ -1,0 +1,13 @@
+body {
+  display: flex;             /* Transforma o container num flex container */
+  justify-content: center;   /* Centraliza horizontalmente */
+  align-items: center;       /* Centraliza verticalmente */
+  height: 100vh;
+  background-color: #000000;
+}
+
+#heart {
+  display: block;
+  margin: auto auto;
+  position: absolute;
+}

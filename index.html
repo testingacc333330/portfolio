@@ -1,0 +1,107 @@
+<!--
+  Hit RUN to see this project in action!
+  
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="sec" id="sobre">
+      <h1>Vithor Schletz</h1>
+      <!-- <img src="imgs/sonic.gif" height="128" width="128" id="sonk" /> -->
+      <img src="imgs/missing.png" class="icon" height="128" width="128" />
+      <h4>Programador em Lua/Luau, Javascript e GDScript</h4>
+      <p>
+        Bem vindo ao meu portifólio, Aqui encontrará coisas que eu entre gosto e
+        não gosto!!
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="sec" id="projetos">
+      <h1>Projetos</h1>
+
+      <p>Projetos que eu trabalhei</p>
+
+      <span class="flex">
+        <div class="card">
+          <h2>Portfolio Pessoal</h2>
+          <p>Meu site de apresentação profissional, com o que eu faço</p>
+          <a class="linkbtn" href="#projetos">Ir para</a>
+        </div>
+
+        <div class="card">
+          <h2>Loja Virtual</h2>
+          <p>Prototipo eCommerce feito em Javascript</p>
+          <a class="linkbtn" href="#projetos">Ir para</a>
+        </div>
+
+        <div class="card">
+          <h2>Dashboard de Dados</h2>
+          <p>Painel interativo de dados para visualizar metricas.</p>
+          <a class="linkbtn" href="#projetos">Ir para</a>
+        </div>
+      </span>
+    </div>
+
+    <hr />
+
+    <div class="sec" id="contato">
+      <h1>Meus contatos</h1>
+
+      <p>Entre em contato comigo pelo Zap</p>
+
+      <div class="grid">
+        <input placeholder="Nome" id="wname" />
+        <input placeholder="Email" id="wmail" />
+        <textarea placeholder="Digite sua mensagem" id="msg"></textarea>
+
+        <input type="button" id="whatsappbtn" value="Enviar no Whatsapp" />
+
+        <script>
+          document.getElementById("whatsappbtn").onclick = function () {
+            const name = document.getElementById("wname").value;
+            const email = document.getElementById("wmail").value;
+            const msg = document.getElementById("msg").value;
+
+            const final = `Meu nome é ${name} (${email}), ${msg}`;
+            const url = `https://wa.me/5527997951112?text=${encodeURIComponent(final)}`;
+
+            window.open(url, "_blank");
+          };
+        </script>
+
+        <a href="https://x.com/testingacc33331"><img src="https://img.icons8.com/color/twitter" height="32px" width="32px" style="text-decoration: none; text-align: center; display: inline-block;"> Twitter</a>
+
+        <a href="https://www.youtube.com/@testingaccstuff"><img src="https://img.icons8.com/color/youtube" height="32px" width="32px" style="text-decoration: none; text-align: center; display: inline-block;"> Youtube</a>
+        
+        <a href="https://www.instagram.com/jairmessiasbolsonaro/?hl=pt-br"><img src="https://img.icons8.com/color/instagram" height="32px" width="32px" style="text-decoration: none; text-align: center; display: inline-block;"> Instagram</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <img
+      width="15px"
+      height="15px"
+      src="imgs/heart.webp"
+      id="heart"
+      onclick="badtime()"
+    />
+  </body>
+</html>

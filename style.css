@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+}
+
+canvas {
+  position: fixed;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  border-radius: 100%;
+}
+
+.linkbtn {
+  box-shadow: 2px 2px 0 0 #575757;
+  background-color: grey;
+  color: white;
+  height: 80px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 3px;
+  position: relative;
+  text-decoration: none;
+  bottom: 0;
+}
+
+.linkbtn:hover {
+  background-color: #989898;
+  box-shadow: 2px 2px 0 0 #616161;
+}
+
+.linkbtn:active {
+  box-shadow: 2px 2px 0 0 #575757;
+}
+
+.card {
+  box-shadow: 3px 3px 0 0 grey;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.grid {
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  display: grid;
+  gap: 5px;
+}
+
+#contato input {
+  height: 30px;
+  width: 400%
+}
+
+#contato textarea {
+  height: 200px;
+  width: 400%
+}
+
+nav {
+  z-index: 30;
+  position: fixed;
+  width: 100%;
+  background: grey;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #919191;
+}
+
+.sec {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  padding: 40px;
+  margin-top: 0px;
+  background-color: #c7c7c7;
+  height: 100vh
+}
+
+#sonk:hover {
+  content: url("imgs/sonicrun.gif");
+}
